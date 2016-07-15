@@ -1,0 +1,13 @@
+<h1>Welcome to SMSender</h1>
+<h5>This application has been developed to be able to send SMS</h5>
+
+<%= form_tag :action => 'Send', method: :post do %>
+<p> <label for="Message">Recipient</label>:
+    <%= text_field 'number', '' %>
+</p>
+
+<p> <label for="Message">Message</label>:
+    <%= text_area 'message', ''%>
+</p>
+<%= submit_tag 'Send Message' %>
+<% end -%>
